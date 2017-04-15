@@ -1,0 +1,93 @@
+﻿body
+{
+    background-color: #ECEFF1;
+}
+
+.buttonTest{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    left: 90%;
+    bottom: 5%;
+    width: 60px;
+    height: 60px;
+    background-color: #283593;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px #888888;
+    color: white;
+
+    
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.plus{
+    font-size: 300%;
+}
+.innerText{
+    padding: 15px 5px 15px 5px;
+    color: black;
+}
+@keyframes forwardsMove{
+    0%{
+        background-color: #283593;
+        left: 90%;
+    }
+    33%{
+        width: 60px;
+        border-radius: 30px;
+        left: 45%;
+        right: 45%;
+    }
+     66%{
+        border-radius: 5px;
+        background-color: #283593;
+        left: 35%;
+        right: 35%;
+        width: 30%;  
+        height: 60px;
+        bottom: 5%;
+    }
+     100%{
+        border-radius: 5px;
+        background-color: white;
+        left: 35%;
+        right: 35%;
+        bottom: 5%;
+        width: 30%;
+        height: 500px;
+     }
+
+}
+
+@keyframes backwardsMove{
+    0%{
+        border-radius: 5px;
+        background-color: white;
+        left: 35%;
+        right: 35%;
+        bottom: 5%;
+        width: 30%;
+        height: 500px;
+     }
+    33%{
+        border-radius: 5px;
+        background-color: #283593;
+        left: 35%;
+        right: 35%;
+        width: 30%;  
+        height: 60px;
+        bottom: 5%;
+    }
+    66%{
+        width: 60px;
+        border-radius: 30px;
+        left: 45%;
+        right: 45%;
+    }
+    100%{
+        background-color: #283593;
+        left: 90%;
+    }
+
+}
